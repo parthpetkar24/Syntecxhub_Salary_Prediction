@@ -11,7 +11,7 @@ from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score # Mo
 
 # Load Data
 # The dataset is uploaded on Github and the link is being used
-data_path="https://raw.githubusercontent.com/parthpetkar24/Projects/refs/heads/main/Machine_Learning/Multiple_Linear_Regression/salary_prediction/data/SalaryMulti.csv"
+data_path="https://raw.githubusercontent.com/parthpetkar24/Syntecxhub_Salary_Prediction/refs/heads/main/data/SalaryMulti.csv"
 data=pd.read_csv(data_path)
 
 # Check if data is loaded
