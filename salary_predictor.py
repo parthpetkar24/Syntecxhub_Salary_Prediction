@@ -15,11 +15,12 @@ data_path="https://raw.githubusercontent.com/parthpetkar24/Syntecxhub_Salary_Pre
 data=pd.read_csv(data_path)
 
 # Check if data is loaded
-print(data.head(5))
+print(data.head(5)+"\n")
 
 # No categorical value present
 
 # Check Correlated Matrix using Pearson correlation coefficient
+print("\n Correlation Matrix: ")
 print(data.corr())
 
 # Since Certifications feature is weakly correlated to the target variable, removing it is best option
@@ -76,6 +77,7 @@ plt.ylabel("Salary")
 plt.show()
 
 # Model Evaluation
+print("\n Model Evaluation:")
 y_pred=regressor.predict(x_test_scaled)
 print(f"Mean Absolute Error: {mean_absolute_error(y_test,y_pred):.2f}")
 print(f"Mean Squared Error: {mean_squared_error(y_test,y_pred):.2f}")
