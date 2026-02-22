@@ -15,7 +15,7 @@ data_path="https://raw.githubusercontent.com/parthpetkar24/Syntecxhub_Salary_Pre
 data=pd.read_csv(data_path)
 
 # Check if data is loaded
-print(data.head(5)+"\n")
+print(data.head(5),"\n")
 
 # No categorical value present
 
